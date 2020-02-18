@@ -1,8 +1,6 @@
 package com.forum.testForum.domain;
 
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 import org.hibernate.validator.constraints.Length;
 
 import javax.persistence.*;
@@ -12,7 +10,8 @@ import java.time.LocalDateTime;
 
 @NoArgsConstructor
 @Entity
-@ToString
+@Setter
+@Getter
 public class Post {
 
     @Id
