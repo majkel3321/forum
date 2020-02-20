@@ -29,4 +29,12 @@ public class PostService {
 
         return postMapper.mapToPostDtoList(postList);
     }
+
+    public PostDto getPostById(Long id){
+        return postMapper.mapToPostDto(postRepository.findById(id).get());
+    }
+
+    public void deletePostById(Long id){
+        postRepository.deleteById(id);
+    }
 }

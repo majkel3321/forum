@@ -15,4 +15,8 @@ public class PostMapper {
                 .map(post -> new PostDto(post.getId(),post.getSubject(),post.getMessage(),
                         post.getUser().getId(),post.getDateTime())).collect(Collectors.toList());
     }
+
+    public PostDto mapToPostDto(Post post){
+        return new PostDto(post.getId(),post.getSubject(),post.getMessage(),post.getUser().getId(),post.getDateTime());
+    }
 }

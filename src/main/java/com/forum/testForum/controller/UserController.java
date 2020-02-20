@@ -1,6 +1,5 @@
 package com.forum.testForum.controller;
 
-import com.forum.testForum.domain.User;
 import com.forum.testForum.domain.dto.UserDto;
 import com.forum.testForum.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

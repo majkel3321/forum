@@ -1,6 +1,5 @@
 package com.forum.testForum;
 
-import com.forum.testForum.domain.Post;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
